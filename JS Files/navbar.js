@@ -15,9 +15,11 @@ function showDisplayOfTheHamburgerMenu(){
     for(let i = 0; i<=hamburgerMenuContainer.length; i++ ){
         if(hamburgerMenuContainer[i].style.width == "100vw"){
             hamburgerMenuContainer[i].style.width = "0vw"
+            hamburgerMenuContainer[i].style.marginTop = "0"
         }
         else{
             hamburgerMenuContainer[i].style.width = "100vw"
+            hamburgerMenuContainer[i].style.marginTop = "-10px"
         }
     }
 }
