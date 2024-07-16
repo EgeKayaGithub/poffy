@@ -130,9 +130,12 @@ h1 {
     align-items: center;
     height: 0px;
     border-radius: 20px;
+    /* margin-top: -40px; */
     padding-right: 30px;
+    transition: 0.3s;
     border: 0px solid #d5d3d3;
     display: none;
+    /* margin-right: -60px; */
 }
 
 .hamburger {
@@ -226,7 +229,7 @@ h1 {
 }
 .hamburgerMenuContainer nav ul li a{
     text-decoration: none;
-    color: #5e5e5e;
+    color: #7d7d7d;
 }
 @media screen and (max-width: 1000px) {
     .navbarLeft nav ul{

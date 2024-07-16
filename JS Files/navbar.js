@@ -11,15 +11,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function showDisplayOfTheHamburgerMenu(){
     let hamburgerMenuContainer = document.querySelectorAll(".hamburgerMenuContainer")
-
-    for(let i = 0; i<=hamburgerMenuContainer.length; i++ ){
-        if(hamburgerMenuContainer[i].style.width == "100vw"){
+    let hamburgerMenuButtonContainer = document.querySelectorAll(".hamburgerMenuButtonContainer")
+    // let hamburgerMenuButtonContainer = document.querySelectorAll(".hamburgerMenuButtonContainer")
+    for(let i = 0; i<=hamburgerMenuContainer.length-1; i++ ){
+        if(hamburgerMenuContainer[i].style.width == "100vw" || hamburgerMenuContainer[i].style.width == null){
             hamburgerMenuContainer[i].style.width = "0vw"
-            hamburgerMenuContainer[i].style.marginTop = "0"
+            hamburgerMenuButtonContainer[i].style.marginTop = "0"
+            hamburgerMenuButtonContainer[i].style.marginRight = "0"
         }
         else{
             hamburgerMenuContainer[i].style.width = "100vw"
-            hamburgerMenuContainer[i].style.marginTop = "-10px"
+            hamburgerMenuButtonContainer[i].style.marginTop = "-40px"
+            hamburgerMenuButtonContainer[i].style.marginRight = "-60px"
         }
     }
 }
