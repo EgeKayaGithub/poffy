@@ -26,3 +26,29 @@ function showDisplayOfTheHamburgerMenu(){
         }
     }
 }
+const x = document.getElementsByClassName("navbar")
+document.addEventListener('scroll', () => {
+    for(let i = 0; i<=x.length-1; i++ ){
+        if(window.scrollY > 151) {
+            x[i].classList.remove('not-scrolled');
+            x[i].classList.add('scrolled');
+        } else {
+            x[i].classList.add('not-scrolled');
+            x[i].classList.remove('scrolled');
+        }
+    }
+
+});
+const y = document.getElementsByClassName("navbar-container")
+document.addEventListener('scroll', () => {
+    for(let i = 0; i<=y.length; i++ ){
+        if(window.scrollY > 175) {
+            y[i].classList.add('not-padding');
+            y[i].classList.remove('padding');
+        } else {
+            y[i].classList.remove('not-padding');
+            y[i].classList.add('padding');
+        }
+    }
+
+});
