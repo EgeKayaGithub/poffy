@@ -10,8 +10,7 @@
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: flex-start;
-    padding-top: 200px;
+    align-items: center;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -25,16 +24,103 @@
     font-weight: 400;
     color: white;
     text-transform: none;
-    width: 600px;
+    width: 47%;
 }
-#section1 button{
+#section1 a{
     background-color: #2a2e32;
     width: 150px;
     height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     border-radius: 15rem;
     margin-left: -3px;
     box-shadow: 0 0 10px -2px rgba(0,0,0,0.7);
     border: none;
+}
+
+@media screen and (max-width:735px) {
+    #section1 .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #section1 h3{
+        text-align: center;
+        width: 100%;
+    }
+    #section1 p{
+        text-align: center;
+        width: 60%;
+    }
+    #section1 a{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:660px) {
+    #section1 .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #section1 h3{
+        text-align: center;
+        font-size: 54px;
+    }
+    #section1 p{
+        text-align: center;
+        font-size: 18px;
+    }
+    #section1 a{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:540px) {
+    #section1 .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #section1 h3{
+        text-align: center;
+        font-size: 45px;
+    }
+    #section1 a{
+        margin-left: 0;
+    }
+    #section1 p{
+        width: 75%;
+    }
+    #section1{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width:400px) {
+    #section1 .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #section1 h3{
+        text-align: center;
+        font-size: 45px;
+        width: 100%;
+    }
+    #section1 a{
+        margin-left: 0;
+    }
+    #section1 p{
+        width: 100%;
+    }
+    #section1{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 /*!Sections Finishing*/

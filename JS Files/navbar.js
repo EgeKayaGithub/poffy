@@ -29,7 +29,7 @@ function showDisplayOfTheHamburgerMenu(){
 const x = document.getElementsByClassName("navbar")
 document.addEventListener('scroll', () => {
     for(let i = 0; i<=x.length-1; i++ ){
-        if(window.scrollY > 151) {
+        if(window.scrollY > 100) {
             x[i].classList.remove('not-scrolled');
             x[i].classList.add('scrolled');
         } else {
@@ -42,7 +42,7 @@ document.addEventListener('scroll', () => {
 const y = document.getElementsByClassName("navbar-container")
 document.addEventListener('scroll', () => {
     for(let i = 0; i<=y.length; i++ ){
-        if(window.scrollY > 175) {
+        if(window.scrollY > 125) {
             y[i].classList.add('not-padding');
             y[i].classList.remove('padding');
         } else {
