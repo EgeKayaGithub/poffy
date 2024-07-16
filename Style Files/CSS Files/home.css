@@ -1,3 +1,40 @@
 #mainPage a{
     color: #000;
 }
+
+/*!Sections Staring*/
+#section1{
+    width: 100vw;
+    height: 100vh;
+    background: url(../Images/pexels-theyshane-4038853.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#section1 h3{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+#section1 p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-transform: none;
+    width: 600px;
+}
+#section1 button{
+    background-color: #2a2e32;
+    width: 150px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 15rem;
+    margin-left: -3px;
+    box-shadow: 0 0 10px -2px rgba(0,0,0,0.7);
+    border: none;
+}
+/*!Sections Finishing*/
