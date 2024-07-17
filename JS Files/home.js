@@ -13,16 +13,19 @@ function changeColor(){
     const navbarContainer = document.getElementsByClassName("navbar-container")[0]
     const navbar = document.getElementsByClassName("navbar")[0]
     const a = document.getElementsByClassName("a")
+    const hamburgerBar = document.getElementsByClassName("bar")
     mainPage.classList.remove("white-color")
     mainPage.classList.add("red-color")
     document.addEventListener('scroll', () => {
         if(window.scrollY > 0) {
             navbar.classList.remove('not-scrolled');
             navbar.classList.add('scrolled');
-            navbarContainer.classList.add('not-padding');
-            navbarContainer.classList.remove('padding');
             mainPage.classList.remove("red-color")
             mainPage.classList.add("black-color")
+            for(let i = 0; i<=hamburgerBar.length-1;i++){
+                hamburgerBar[i].classList.remove('white-background-color')
+                hamburgerBar[i].classList.add('black-background-color')
+            }
             for(let i = 0; i<=a.length-1;i++){
                 a[i].classList.remove('white-color')
                 a[i].classList.add('normal-color')
@@ -32,10 +35,12 @@ function changeColor(){
         } else {
             navbar.classList.add('not-scrolled');
             navbar.classList.remove('scrolled');
-            navbarContainer.classList.remove('not-padding');
-            navbarContainer.classList.add('padding');
             mainPage.classList.remove("black-color")
             mainPage.classList.add("red-color")
+            for(let i = 0; i<=hamburgerBar.length-1;i++){
+                hamburgerBar[i].classList.add('white-background-color')
+                hamburgerBar[i].classList.remove('black-background-color')
+            }
             for(let i = 0; i<=a.length-1;i++){
                 a[i].classList.remove('normal-color')
                 a[i].classList.add('white-color')
