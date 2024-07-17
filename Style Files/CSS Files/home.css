@@ -1,7 +1,6 @@
-#mainPage a{
-    color: #000;
+.red-color{
+    color: red;
 }
-
 /*!Sections Staring*/
 #section1{
     width: 100%;

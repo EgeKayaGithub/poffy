@@ -12,14 +12,26 @@
 }
 
 /*!Navbar Starting*/
+.black-color{
+    color: black;
+}
+.red-color{
+    color: red;
+}
 .scrolled{
     background-color: #ebebeb;
     border: 1px solid #d5d3d3;
 }
 .not-scrolled{
-    background-color: #ffffff80;
+    background-color: #00000080;
     color: white;
     border: none;
+}
+.white-color{
+    color: white;
+}
+.normal-color{
+    color: #5e5e5e;
 }
 .not-padding{
     padding-top: 10px;
@@ -102,7 +114,6 @@
 }
 .navbarLeft nav ul li a{
     text-decoration: none;
-    color: #5e5e5e;
     transition: 0.3s;
 }
 .navbarLeft nav ul li:hover:after{
