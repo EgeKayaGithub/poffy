@@ -11,6 +11,12 @@
     text-transform: capitalize;
 }
 
+/*!Scrollbar Starting*/
+body::-webkit-scrollbar{
+    display: none;
+}
+/*!Scrollbar Finishing*/
+
 /*!Navbar Starting*/
 .black-color{
     color: black;
