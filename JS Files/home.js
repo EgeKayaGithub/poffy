@@ -16,6 +16,12 @@ function changeColor(){
     const hamburgerBar = document.getElementsByClassName("bar")
     mainPage.classList.remove("white-color")
     mainPage.classList.add("red-color")
+    navbar.classList.remove("scrolled")
+    navbar.classList.add("not-scrolled")
+    for(let i = 0; i<=a.length-1;i++){
+        a[i].classList.remove('normal-color')
+        a[i].classList.add('white-color')
+    }
     document.addEventListener('scroll', () => {
         if(window.scrollY > 0) {
             navbar.classList.remove('not-scrolled');
@@ -35,7 +41,8 @@ function changeColor(){
         } else {
             navbar.classList.add('not-scrolled');
             navbar.classList.remove('scrolled');
-            mainPage.classList.remove("black-color")
+            mainPage.classList.remove("normal-color")
+            mainPage.classList.remove("white-color")
             mainPage.classList.add("red-color")
             for(let i = 0; i<=hamburgerBar.length-1;i++){
                 hamburgerBar[i].classList.add('white-background-color')
@@ -44,8 +51,6 @@ function changeColor(){
             for(let i = 0; i<=a.length-1;i++){
                 a[i].classList.remove('normal-color')
                 a[i].classList.add('white-color')
-                mainPage.classList.remove("black-color")
-                mainPage.classList.add("normal-color")
             }
     }})
 }
