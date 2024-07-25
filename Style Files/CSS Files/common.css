@@ -10,7 +10,6 @@
     font-style: normal;
     text-transform: capitalize;
 }
-
 /*!Scrollbar Starting*/
 body::-webkit-scrollbar{
     display: none;
@@ -18,33 +17,6 @@ body::-webkit-scrollbar{
 /*!Scrollbar Finishing*/
 
 /*!Navbar Starting*/
-.black-color{
-    color: black;
-}
-.red-color{
-    color: red;
-}
-.black-background-color{
-    background-color: black;
-}
-.white-background-color{
-    background-color: white;
-}
-.scrolled{
-    background-color: #ebebeb;
-    border: 1px solid #d5d3d3;
-}
-.not-scrolled{
-    background-color: #00000080;
-    color: white;
-    border: none;
-}
-.white-color{
-    color: white;
-}
-.normal-color{
-    color: #5e5e5e;
-}
 .navbar-container{
     display: flex;
     width: 100%;
@@ -64,6 +36,7 @@ body::-webkit-scrollbar{
     height: 80px;
     border-radius: 30rem;
     transition: 0.3s;
+    background-color: #00000080;
     box-shadow: 0 0 10px -2px rgba(0,0,0,0.7);
 }
 .navbarSection{
@@ -122,6 +95,10 @@ body::-webkit-scrollbar{
 .navbarLeft nav ul li a{
     text-decoration: none;
     transition: 0.3s;
+    color: white;
+}
+.navbarLeft nav ul li a:hover{
+    color: #d6d5d5;
 }
 .navbarLeft nav ul li:hover:after{
     width: 100%;
@@ -191,6 +168,7 @@ h1 {
     transition: all 0.4s ease-in-out;
     position: absolute; 
     z-index: 1;
+    background-color: white;
 }
 
 .bar1 {
@@ -241,7 +219,7 @@ h1 {
     transition: 0.4s;
     display: flex;
     overflow: hidden;
-    background-color: #f2f2f2;
+    background-color: #0f0f0f;
 }
 
 .hamburgerMenuContainer nav{
@@ -262,7 +240,7 @@ h1 {
     font-size: 25px;
     width: 100%;
     padding: 10px;
-    border-bottom: 3px solid red;
+    border-bottom: 1px solid rgb(30, 30, 30);
 }
 .hamburgerMenuContainer nav ul li a{
     text-decoration: none;

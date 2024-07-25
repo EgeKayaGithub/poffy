@@ -33,3 +33,27 @@ function showDisplayOfTheHamburgerMenu(){
     }
 }
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    let interval = setInterval(()=>{
+        let navbar = document.getElementById("navbar")
+        if(navbar){
+            changeColor()
+            clearInterval(interval)
+        }
+    },50)
+})
+
+function changeColor(){
+    navbar = document.getElementsByClassName("navbar")[0]
+    window.addEventListener("scroll", function(){
+
+        if(window.scrollY > 0){
+            navbar.style.backgroundColor = "#000"
+        }
+        else{
+            navbar.style.backgroundColor = "#00000080"
+        }
+
+    })
+}

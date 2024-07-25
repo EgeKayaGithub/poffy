@@ -1,43 +1,7 @@
-.red-color{
+#mainPage a{
     color: red;
 }
-.black-color{
-    color: black;
-}
-.white-color{
-    color: white;
-}
-.red-color{
-    color: red;
-}
-.black-background-color{
-    background-color: black;
-}
-.white-background-color{
-    background-color: white;
-}
-.scrolled{
-    background-color: #ebebeb;
-    border: 1px solid #d5d3d3;
-}
-.not-scrolled{
-    background-color: #00000080;
-    color: white;
-    border: none;
-}
 
-.white-color:hover{
-    color: rgb(188, 188, 188);
-}
-
-.red-color:hover{
-    color: #da0606;
-}
-
-
-.normal-color{
-    color: #5e5e5e;
-}
 /*!Sections Staring*/
 #section1{
     width: 100%;
